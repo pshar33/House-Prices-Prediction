@@ -19,16 +19,18 @@ To download the data files visit :-  https://www.kaggle.com/c/house-prices-advan
 
 1. Loading the dataset: Load the data and import the libraries.
 2. Data Preprocessing:
-     * Reading the images stored in 2 folders(Train,Test).
+     * Reading the data stored in 2 folders(Train,Test).
      * Removing redundant columns.
      * Data imputation for missing data (nulls or NA)
      * Removing outliers
      * Removing skewness in target variable
      * One hot encoding for categorical features.
-3. Data Augmentation: Augment the train,validation and test data using ImageDataGenerator
-4. Creating and Training the Model: Create a cnn model in KERAS.
-5. Evaluation: Display the plots from the training history.
-6. Prediction: Run predictions with model.predict
-7. Conclusion: Comparing original labels with predicted labels and calculating recall score.
+3. Using GridSearchCV to find best hyperparameters for Gradient Boosting Regressor.
+4. Individual ordered testing to get best hyperparameters by varying one parameter and keeping rest constant.
+5. Implementing GradientBoostingRegressor with hyperparameters obtained above.
+6. Prediction: Run predictions and calculate cross_validation_score and accuracies for target variable(house prices)
+7. Submission:Writing the predicted house prices and ids to csv file and submitting at Kaggle.
 
-## Accuracy and loss plots
+## Accuracy scores
+
+KAGGLE SCORE (RMSE) = 0.13
